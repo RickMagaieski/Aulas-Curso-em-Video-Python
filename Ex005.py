@@ -1,0 +1,5 @@
+no = input("\033[1mQual o seu nome?\033[1m ")
+print(f"\033[1;36m============== Seja Bem Vindo {no}! ==============\033[m")
+n = int(input("\033[1mDigite um número: \033[m"))
+print(f"\033[1mAnalisando o número {n}, percebe-se que:\n\033[1;36mSeu antecessor é {n-1}.\nSeu sucessor é {n+1}.\033[m")
+print(f"\033[1mAté mais {no}, volte sempre que for necessário!\033[m")
