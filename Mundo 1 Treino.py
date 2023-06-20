@@ -1,3 +1,5 @@
+#Treino sobre cores no terminal:
+
 from random import choice
 from time import sleep
 print("\033[1mSeja bem vindo!")
