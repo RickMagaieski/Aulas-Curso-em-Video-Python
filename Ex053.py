@@ -1,10 +1,10 @@
-#Solução proposta inicialmente:
+# Solução proposta inicialmente:
 
 frase = str(input("Digite algo: ")).upper().strip()
 palavra = frase.split()
 junto = ''.join(palavra)
 inverso = ''
-for letra in range(len(junto) - 1, -1, -1):
+for letra in range(len(junto)-1, - 1, - 1):
     inverso += junto[letra]
 print(f"O inverso de {frase} é {inverso}")
 if inverso == junto:
@@ -12,19 +12,22 @@ if inverso == junto:
 else:
     print("Essa frase não é um palíndromo.")
 
-#solução mais simples:
+
+# solução mais simples:
 
 
 """def palindromo(frase):
     frase = frase.replace(' ', '')
     inverso = frase[::-1]
-    if frase.lower() == inverso.lower():
+    if frase == inverso:
+        print(f"O contrário da sua frase é {inverso}, ou seja: ")
         return True
     else:
+        print(f"O contrário da sua frase é {inverso}, ou seja: ")
         return False
 
 
-frase_usuario = input("Digite algo: ")
+frase_usuario = input("Digite algo: ").upper()
 if palindromo(frase_usuario):
     print("A frase é um palíndromo!")
 else:
