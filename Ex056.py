@@ -5,16 +5,16 @@ veio = 0
 name = ''
 for p in range(1, 5):
     print("―" * 5, f"{p}ª Pessoa", "―" * 5)
-    nome = str(input("Nome: "))
+    nome = str(input("Nome: ")).strip()
     idade = int(input("Idade: "))
-    sexo = str(input("Sexo [M]/[F]: "))
+    sexo = str(input("Sexo [M]/[F]: ")).strip()
     media += idade / 4
 
-    if idade > veio and sexo == "M":
+    if idade > veio and sexo in"Mm":
         veio = idade
         name = nome
 
-    if sexo == "F" and idade < 20:
+    if sexo in "Ff" and idade < 20:
         cont += 1
 
 print(void)
