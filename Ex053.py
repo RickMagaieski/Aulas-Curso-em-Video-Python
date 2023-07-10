@@ -27,8 +27,8 @@ else:
         return False
 
 
-frase_usuario = input("Digite algo: ").upper()
-if palindromo(frase_usuario):
+usuario = input("Digite algo: ").upper()
+if palindromo(usuario):
     print("A frase é um palíndromo!")
 else:
     print("A frase não é um palíndromo...")"""
