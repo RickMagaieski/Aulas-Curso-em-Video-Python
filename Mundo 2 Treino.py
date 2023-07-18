@@ -152,9 +152,9 @@ print(f"Das {perg} datas de nascimentos inseridas, {cont2} são de pessoas maior
 
 #Treino de FOR: Ex055 - Maior e menor da sequência
 
-perg = int(input("Digite quantos pesos serão lidos: "))
+"""perg = int(input("Digite quantos pesos serão lidos: "))
 lista = []
 for p in range(1, perg + 1):
     peso = float(input(f"Digite o peso da {p}° pessoa: "))
     lista.append(peso)
-print(f"O maior peso foi {max(lista)}Kg e o menor foi {min(lista)}Kg")
+print(f"O maior peso foi {max(lista)}Kg e o menor foi {min(lista)}Kg")"""
