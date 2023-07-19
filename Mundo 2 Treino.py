@@ -158,3 +158,36 @@ for p in range(1, perg + 1):
     peso = float(input(f"Digite o peso da {p}° pessoa: "))
     lista.append(peso)
 print(f"O maior peso foi {max(lista)}Kg e o menor foi {min(lista)}Kg")"""
+
+
+
+#Treino de FOR: Ex056 - Analisador Completo
+
+"""from time import sleep
+
+perg = int(input("Digite o número de pessoas que você irá analisar: "))
+soma = 0
+cont = 0
+veio = ''
+idadeveio = 0
+for pe in range(1, perg + 1):
+    print(f"====== {pe}° PESSOA ======")
+    pessoa = input("Digite o nome: ").strip()
+    idade = int(input("Digite a idade: "))
+    sexo = input("Para o masculino digite M e F para feminino: ").upper()
+    soma += idade / perg
+    if sexo == "F" and idade < 20:
+        cont += 1
+    if idade < 9999 and sexo == "M":
+        veio = pessoa
+        idadeveio = idade
+print("Analisando informações...")
+sleep(2)
+print("De acordo com as informações fornecidas:")
+sleep(1.8)
+print("A média de idade do grupo é de {:.1f} anos".format(soma))
+print(f"Existe(m) {cont} mulher(es) com menos de 20 anos.")
+if veio and idadeveio:
+    print(f"E o homem mais velho do grupo se chama {veio} com {idadeveio} anos de idade! ")
+else:
+    print("Não foi inserido dados de nenhum homem.")"""
