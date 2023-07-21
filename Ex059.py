@@ -33,9 +33,6 @@ while True:
             break
         if escolha == 7:
             break
-        if escolha > 7 and escolha != int:
-            print("\033[1;37mComando Desconhecido, tente de novo!\033[m")
-            sleep(1.5)
     if escolha2 == 7:
         print("\033[1;37mFechando o programa...\033[m")
         sleep(2)
