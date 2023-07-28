@@ -1,17 +1,16 @@
 #Conta de fatorial usando o loop While:
 
 n = int(input("Digite um número para calcularmos seu fatorial: "))
-c = n
 f = 1
 print(f"{n}! = ", end='')
-while c > 0:
-    print(f"{c}", end=' ')
-    if c > 1:
+while n > 0:
+    print(f"{n}", end=' ')
+    if n > 1:
         print("X", end=' ')
     else:
         print(f"= {f}", end=' ')
-    f *= c
-    c -= 1
+    f *= n
+    n -= 1
 
 #Cálculo de fatorial com loop For:
 
