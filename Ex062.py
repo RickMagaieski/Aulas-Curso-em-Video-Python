@@ -8,7 +8,6 @@ while True:
     razao = int(input("Digite a razão da PA: "))
     cont = 0
     total = 10
-    perg = 1
     while True:
         while cont < total:
             print(f"{termo}", end=' --> ')
@@ -24,10 +23,14 @@ while True:
             sleep(1)
         if perg == 2:
             break
+        if perg != 1 and perg != 2 and perg != 0:
+            print("Comando Desconhecido.")
+            sleep(1)
+            print("Tente novamente após a PAUSA.")
+            sleep(1)
         if perg == 0:
             sleep(0.8)
             print(f"O programa encerrou com {cont} termos sendo mostrados.")
-            perg += perg
             break
     if perg == 0:
         break
