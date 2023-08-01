@@ -243,3 +243,4 @@ while True:
             print("\nAdvinhe corretamente, ou eu te comerei! Boa sorte...")
             sleep(1.5)
             cont = 0
+            perg = int(input('Sua resposta: '))
