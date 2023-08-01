@@ -191,3 +191,55 @@ if veio and idadeveio:
     print(f"E o homem mais velho do grupo se chama {veio} com {idadeveio} anos de idade! ")
 else:
     print("Não foi inserido dados de nenhum homem.")"""
+
+
+
+#Treino de WHILE: Ex057 - Analisador de Sexo
+
+"""from time import sleep
+
+while True:
+    sexo = str(input("Digite o seu sexo: ")).upper()
+    if sexo != 'M' and sexo != 'F':
+        print("Sexo Inválido, por favor tente de novo!")
+        sleep(1)
+    if sexo == 'M':
+        print(f"O sexo Masculino foi cadastrado.")
+        break
+    if sexo == 'F':
+        print(f"O sexo Feminino foi cadastrado.")
+        break"""
+
+
+
+#Treino de WHILE: Ex058 - Jogo de Advinhação
+
+from time import sleep
+from random import randint
+
+print("=" * 30)
+print("Seja Bem Vindo ao Esfinge V2.0")
+print("=" * 30)
+sleep(1)
+void = ''
+while True:
+    print(void)
+    print("========== MENU ==========")
+    print("[1] Começar o jogo\n[2] Trocar Nome\n[3] Sobre\n[4] Fechar")
+    esc = int(input("Sua escolha: "))
+    if esc == 1:
+        while True:
+            print("Entrando na Pirâmide...")
+            sleep(1.5)
+            adv = randint(1, 10)
+            print("Muahahahahhah, eu sou a Esfinge! E eu tenho um desafio para você!!!!!")
+            sleep(2)
+            print("Irei escolher um número entre 1 e 10, e quero que advinhe em qual número eu pensei!")
+            sleep(1)
+            for c in range(1, 4):
+                sleep(0.8)
+                print(".", end='')
+            sleep(2)
+            print("\nAdvinhe corretamente, ou eu te comerei! Boa sorte...")
+            sleep(1.5)
+            cont = 0
