@@ -206,7 +206,7 @@ else:
 
 #Treino de WHILE: Ex058 - Jogo de Advinhação + Menu de Opções + Validação de sexo
 
-from time import sleep
+"""from time import sleep
 from random import randint
 
 print("=" * 30)
@@ -329,4 +329,20 @@ while True:
         sleep(2)
         print("-------------------")
         print("Programa finalizado")
-        break
+        break"""
+
+
+
+# Treino de WHILE: Ex060 - Cálculo de PA
+
+fat = int(input("Digite um número para caulcularmos o seu fatorial: "))
+f = 1
+print(f"{fat}! = ", end='')
+while fat > 0:
+    print(f"{fat}", end=' ')
+    if fat > 1:
+        print("X", end=' ')
+    else:
+        print(f"= {f}", end=' ')
+    f *= fat
+    fat -= 1
