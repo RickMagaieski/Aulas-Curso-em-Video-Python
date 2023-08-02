@@ -22,6 +22,7 @@ else:
 
 
 
+
 #Treino de FOR: Ex048 - Números ímpares multiplos de 3
 
 """valor = int(input("Digite o valor desejado: "))
@@ -46,12 +47,14 @@ print(f"A soma de todos os {cont} valores foi de {acu}")"""
 
 
 
+
 #Treino de FOR: Ex049 - Tabuada
 
 """numero = int(input("\033[1m\033[4mDigite o número da tabuada desejada:\033[m "))
 for t in range(1, 11):
     mult = t * numero
     print(f"\033[1;36m{numero} X {t}:\033[m\033[1m {mult}\033[m")"""
+
 
 
 
@@ -77,6 +80,7 @@ print(f"Foram desconsiderados {cont} valores, os quais foram listados abaixo:\n{
 
 
 
+
 #Treino de FOR: Ex051 - PA
 
 """termo = int(input("Digite o termo: "))
@@ -85,6 +89,7 @@ conta = termo + 10 * razao
 for pa in range(termo, conta, razao):
     print("\033[7m", pa,"\033[m", end='\033[1m --> ')
 print("ACABOU!")"""
+
 
 
 
@@ -111,6 +116,7 @@ else:
 
 
 
+
 #Treino de FOR: Ex053  - Detector de Palíndromos
 
 """from time import sleep
@@ -127,6 +133,7 @@ if juntar == inverso:
     print("Portanto, a sua frase é um PALINDROMO!")
 else:
     print("Portanto, a sua frase não é um PALINDROMO...")"""
+
 
 
 
@@ -150,6 +157,7 @@ print(f"Das {perg} datas de nascimentos inseridas, {cont2} são de pessoas maior
 
 
 
+
 #Treino de FOR: Ex055 - Maior e menor da sequência
 
 """perg = int(input("Digite quantos pesos serão lidos: "))
@@ -158,6 +166,7 @@ for p in range(1, perg + 1):
     peso = float(input(f"Digite o peso da {p}° pessoa: "))
     lista.append(peso)
 print(f"O maior peso foi {max(lista)}Kg e o menor foi {min(lista)}Kg")"""
+
 
 
 
@@ -194,25 +203,8 @@ else:
 
 
 
-#Treino de WHILE: Ex057 - Analisador de Sexo
 
-"""from time import sleep
-
-while True:
-    sexo = str(input("Digite o seu sexo: ")).upper()
-    if sexo != 'M' and sexo != 'F':
-        print("Sexo Inválido, por favor tente de novo!")
-        sleep(1)
-    if sexo == 'M':
-        print(f"O sexo Masculino foi cadastrado.")
-        break
-    if sexo == 'F':
-        print(f"O sexo Feminino foi cadastrado.")
-        break"""
-
-
-
-#Treino de WHILE: Ex058 - Jogo de Advinhação
+#Treino de WHILE: Ex058 - Jogo de Advinhação + Menu de Opções + Validação de sexo
 
 from time import sleep
 from random import randint
@@ -220,27 +212,121 @@ from random import randint
 print("=" * 30)
 print("Seja Bem Vindo ao Esfinge V2.0")
 print("=" * 30)
-sleep(1)
-void = ''
+sleep(0.5)
+print("Olá, antes de inciarmos nos forneca algumas informações!")
+sleep(2)
+nome = ''
+esc = 0
 while True:
-    print(void)
-    print("========== MENU ==========")
-    print("[1] Começar o jogo\n[2] Trocar Nome\n[3] Sobre\n[4] Fechar")
-    esc = int(input("Sua escolha: "))
-    if esc == 1:
+    sexo = input('Por favor, nos informe o seu sexo\nDigite [M] para masculino e [F] para feminino: ').upper()
+    esc = 0
+    while True:
+        if sexo == "F":
+            nome = input("Qual é o seu nome minha querida? ")
+        elif sexo == 'M':
+            nome = input("Qual é o seu nome meu querido? ")
+        else:
+            print("Sexo Desconhecido")
+            break
+        sleep(0.5)
+        if sexo == "M":
+            print(f"Seja bem vindo(a) a Esfinge {nome}!")
+        elif sexo == "F":
+            print(f"Seja bem vinda a Esfinge {nome}!")
+
+        void = ''
+        sleep(1.5)
+
         while True:
-            print("Entrando na Pirâmide...")
-            sleep(1.5)
-            adv = randint(1, 10)
-            print("Muahahahahhah, eu sou a Esfinge! E eu tenho um desafio para você!!!!!")
-            sleep(2)
-            print("Irei escolher um número entre 1 e 10, e quero que advinhe em qual número eu pensei!")
-            sleep(1)
-            for c in range(1, 4):
-                sleep(0.8)
-                print(".", end='')
-            sleep(2)
-            print("\nAdvinhe corretamente, ou eu te comerei! Boa sorte...")
-            sleep(1.5)
-            cont = 0
-            perg = int(input('Sua resposta: '))
+            print(void)
+            print("========== MENU ==========")
+            print("[1] Começar o jogo\n[2] Trocar Informações\n[3] Sobre\n[4] Sair")
+            esc = int(input("Sua escolha: "))
+            print("=" * 26)
+
+            if esc == 1:
+                while True:
+                    print(void)
+                    print("Entrando na Pirâmide...")
+                    sleep(1.5)
+                    print("Muahahahahhah, eu sou a Esfinge! E eu tenho um desafio para você!!!!!")
+                    sleep(2)
+                    print("Irei escolher um número entre 1 e 10 e quero que advinhe em qual número eu pensei!")
+                    sleep(1)
+                    for c in range(1, 4):
+                        sleep(0.8)
+                        print(".", end='')
+                    sleep(2)
+                    print("\nAdvinhe corretamente ou eu te devorarei! Boa sorte...")
+                    sleep(1.5)
+                    adv = randint(1, 10)
+                    cont = 0
+
+                    while True:
+                        cont += 1
+                        perg = int(input('Sua resposta: '))
+
+                        if perg != adv:
+
+                            if cont == 1:
+                                print("Foi se a primeira chance hahahaa!")
+                                sleep(1.7)
+
+                            if cont == 2:
+                                print("De novo...")
+                                sleep(1.7)
+
+                            if cont == 3:
+                                print("Foi se a ultima chance de sobreviver hahahaha!")
+                                sleep(1.7)
+
+                        if perg == adv and cont == 1:
+                            print("Não pode ser, como acertaste de primeira?")
+                            sleep(2)
+                            print("GRRR...")
+                            sleep(1.5)
+                            print("Mereces um prêmio... tome esta espada.")
+                            sleep(2.3)
+                            print("Agora suma de minha frente!!")
+                            sleep(1.8)
+                            break
+
+                        if perg == adv and cont != 1:
+                            print("Você acertou, parabéns, sua vida será poupada...")
+                            sleep(1.8)
+                            print("Pode seguir, criaturinha ínfima...")
+                            sleep(1.9)
+                            break
+
+                        if perg != adv and cont == 3:
+                            print("Suas chances acabaram... Hahahahahaha!")
+                            sleep(2.5)
+                            print("!!NHAC!!")
+                            sleep(2)
+                            print("Você foi devorado!")
+                            sleep(1.5)
+                            break
+
+                    print(void)
+                    print("Gostaria de jogar de novo ou de voltar para o menu?")
+                    resposta = input("Digite [J] para jogar ou [S] para sair: ").upper()
+                    if resposta == "S":
+                        break
+            if esc == 2:
+                break
+
+            if esc == 3:
+                print("Olá! Meu nome é Henrique e eu estou tentando fazer essa bagaça funcionar"
+                      "a dois dias (contando hoje), então eu sinceramente espero terminar hoje!")
+                menu = input("Digite [M] para retornar ao menu: ").upper()
+
+            if esc == 4:
+                break
+        if esc == 4:
+            break
+    if esc == 4:
+        print("Finalizando o programa...")
+        sleep(2)
+        print("-------------------")
+        print("Programa finalizado")
+        break
