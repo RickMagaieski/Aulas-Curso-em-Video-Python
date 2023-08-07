@@ -204,7 +204,7 @@ else:
 
 
 
-#Treino de WHILE: Ex058 - Jogo de Advinhação + Menu de Opções + Validação de sexo
+#Treino de WHILE: Ex057 + Ex058 + Ex059 - Validação de sexo + Jogo de Advinhação + Menu de Opções
 
 """from time import sleep
 from random import randint
@@ -333,16 +333,141 @@ while True:
 
 
 
-# Treino de WHILE: Ex060 - Cálculo de PA
 
-fat = int(input("Digite um número para caulcularmos o seu fatorial: "))
+#Treino de WHILE : Ex060 - Cálculo de Fatorial
+
+"""fat = int(input("Digite um número para caulcularmos o seu fatorial: "))
 f = 1
 print(f"{fat}! = ", end='')
-while fat > 0:
+while True:
     print(f"{fat}", end=' ')
     if fat > 1:
-        print("X", end=' ')
+        print(f"X", end=' ')
     else:
-        print(f"= {f}", end=' ')
+        print(f"= {f}", end='')
+        break
     f *= fat
-    fat -= 1
+    fat -= 1"""
+
+#Outra Possibilidade:
+
+"""fato = int(input("Digite um número para calcularmos o seu fatorial: "))
+conta = 1
+print(f"{fato}! = ", end='')
+for fat in range(fato, 0, -1):
+    conta *= fat
+    print(f"{fat}", end='')
+    if fat > 1:
+        print(" X ", end='')
+    else:
+        print(f" = {conta}", end='')"""
+
+
+
+
+#Treino de WHILE: Ex061 - Progressão Aritimética V2.0
+
+"""termo = int(input("Digite o termo: "))
+razao = int(input("Digite a razão: "))
+cont = 0
+while cont < 10:
+    print(f"{termo}", end=' -> ')
+    termo += razao
+    cont += 1
+print("Fim")"""
+
+#Outra Possibilidade:
+
+"""termo = int(input("Digite o termo: "))
+razao = int(input("Digite a razão: "))
+decimo = termo + 10 * razao
+for pa in range(termo, decimo, razao):
+    print(pa, end=" -> ")
+print("Fim")"""
+
+
+
+
+#Treino de WHILE: Ex062 - Super Progressão Aritimética V3.0
+
+"""from time import sleep
+
+termo = int(input("Digite o termo da progressão: "))
+razao = int(input('Digite a razão da progressão: '))
+cont = 0
+var = 0
+mais = 10
+while True:
+    var += mais
+    while cont < var:
+        print(f"{termo}", end=' -> ')
+        termo += razao
+        cont += 1
+    print("Pausa")
+    var = int(input("Quantos termos a mais você quer ver? "))
+    if var == 0:
+        print("Encerrando programa...")
+        sleep(1.5)
+        print("Programa encerrado.")
+        break"""
+
+
+
+
+#Treino de WHILE: Ex063 - Sequência de Fibonacci
+
+"""perg = int(input("Digite quantos termos você deseja ver: "))
+termo1 = 0
+termo2 = 1
+print(f"{termo1} -> {termo2} ->", end=' ')
+conta = 2
+while not conta == perg:
+    termo3 = termo1 + termo2
+    print(f"{termo3} ->", end=' ')
+    termo1 = termo2
+    termo2 = termo3
+    conta += 1
+print("FIM")"""
+
+
+
+
+#Treino de WHILE: Ex064 - Tratando Vários Valores
+
+"""from time import sleep
+
+cont = 0
+soma = 0
+void = ''
+while True:
+    dig = int(input("Digite um número [Para parar digite 999]: "))
+    if dig != 999:
+        soma += dig
+        cont += 1
+    else:
+        break
+sleep(1)
+print(void)
+print(f"Foram digitados {cont} valores, cuja a soma total dá {soma}")"""
+
+
+
+
+#Treino de WHILE: Ex065 - Maior e Menor Valores
+
+"""cont = 0
+soma = 0
+lista = []
+
+while True:
+    num = int(input("Digite um número: "))
+    perg = input("Você quer continuar [S/N]? ").upper()
+    cont += 1
+    soma += num
+    lista.append(num)
+    if perg == 'N':
+        break
+media = soma / cont
+print(f"Você digitou {cont} números e a média entre eles deu {media}")
+print(f"O maior valor foi {max(lista)} e o menor valor foi {min(lista)}")"""
+
