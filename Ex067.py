@@ -15,14 +15,14 @@ while True:
     print("=" * 13)
     while cont < 10:
         cont += 1
-        conta = num * cont
-        print(f"{num} X {cont} = {conta}")
+        print(f"{num} X {cont} = {num * cont}")
     print("=" * 13)
     print(void)
-    perg = int(input("\033[4m\033[1m[Digite -1 para fechar]\033[m\033[m | Você quer ver outra tabuada? "))
+    print("\033[1m[Digite um número positivo para continuar ou um negativo para fechar]\033[m ")
+    perg = int(input("Você quer continuar ? "))
     cont = 0
     if perg == -1:
-        print("Fechando programa...")
+        print("Fechando o programa...")
         sleep(1)
-        print("Volte sempre")
+        print("Programa encerrado!")
         break
