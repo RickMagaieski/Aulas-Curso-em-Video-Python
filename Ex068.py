@@ -8,7 +8,7 @@ void = ''
 while True:
 
     print(void)
-    perg = str(input("Par ou ímpar [I/P]? ")).upper().strip()
+    perg = str(input("Par ou ímpar [I/P]? ")).upper().strip()[0]
     num = int(input("Joga um valor: "))
 
     print(void)
@@ -17,8 +17,16 @@ while True:
     par = soma % 2 == 0
     impar = soma % 2 != 0
 
-    print(f"Você jogou {num} e o computador jogou {valor}. ", end='')
+    if perg != 'P' and perg != 'I':
+        sleep(1)
+        print(f"\nDigite [P] para PAR e [I] para ÍMPAR.")
+        sleep(0.8)
+        print(f"O item {perg} não é reconhecido como um comando válido")
+        sleep(1.5)
+        print("Tente novamente!")
+        sleep(0.7)
 
+    print(f"Você jogou {num} e o computador jogou {valor}. ", end='')
 
     if perg == 'P' and par:
         cont += 1
