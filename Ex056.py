@@ -10,7 +10,7 @@ for p in range(1, 5):
     sexo = str(input("Sexo [M]/[F]: ")).strip()
     media += idade / 4
 
-    if idade > veio and sexo in"Mm":
+    if idade > veio and sexo in "Mm":
         veio = idade
         name = nome
 
