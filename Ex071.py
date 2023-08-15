@@ -1,5 +1,20 @@
-nota = int(input("Digite o valor: "))
-para50 = nota // 50
-para20 = nota // 20
-para10 = nota // 10
-print(para10)
+valor = int(input('Quanto você quer sacar? R$'))
+total = valor
+notas = 50
+totalnotas = 0
+while True:
+    if total >= notas:
+        total -= notas
+        totalnotas += 1
+    else:
+        if totalnotas > 0:
+            print(f"Total de {totalnotas} notas de R${notas}")
+        if notas == 50:
+            notas = 20
+        elif notas == 20:
+            notas = 10
+        elif notas == 10:
+            notas = 1
+        totalnotas = 0
+        if total == 0:
+            break
