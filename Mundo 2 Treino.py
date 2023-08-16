@@ -471,3 +471,94 @@ media = soma / cont
 print(f"Você digitou {cont} números e a média entre eles deu {media}")
 print(f"O maior valor foi {max(lista)} e o menor valor foi {min(lista)}")"""
 
+
+
+
+#Treino de WHILE: Ex066 - Vários numeros com flag
+
+"""soma = 0
+cont = 0
+while True:
+    num = int(input("Digite um número [999 para parar]: "))
+    if num != 999:
+        soma += num
+        cont += 1
+    else:
+        break
+print(f"Foram digitados {cont} números e a soma entre eles deu {soma}")"""
+
+
+
+
+#Treino de WHILE: Ex067 - Tabuada V3.0
+
+"""perg = int(input("Digite o número da tabuada que você quer ver: "))
+cont = 0
+void = ''
+
+print(void)
+
+print("=" * 13)
+while cont < 10:
+    cont += 1
+    mult = perg * cont
+    print(f"{perg} X {cont} = {mult}")
+print("=" * 13)"""
+
+
+
+
+#Treino de WHILE: Ex068 - Jogo par ou ímpar
+
+from random import randint
+
+"""pc = randint(1, 10)
+cont = 0
+while True:
+    esc = str(input("Par ou ímpar? ")).upper()[0]
+    num = int(input("Escolha um número: "))
+    soma = num + pc
+
+    cont += 1
+    if esc == "P" and soma % 2 == 0:
+        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
+        print("Parabéns... de novo!")
+    if esc == "P" and soma % 2 == 1:
+        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
+        print("Perdeu!")
+        print(f"Ganhou {cont - 1} vez(es)")
+        break
+    if esc == "I" and soma % 2 == 0:
+        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
+        print("Perdeu!")
+        print(f"Ganhou {cont - 1} vez(es)")
+        break
+    if esc == "I" and soma % 2 == 1:
+        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
+        print("Parabéns... de novo!")"""
+
+
+
+
+#Treino de WHILE: Ex069 - Analise de Dados do Grupo
+
+from time import sleep
+
+"""mais18 = 0
+mume20 = 0
+homens = 0
+
+while True:
+    sexo = str(input("Digite o sexo da pessoa: ")).upper()
+    idade = int(input("Digite a idade da pessoa: "))
+    perg = input("Quer continuar? [S/N] ").upper()
+    if sexo == 'F' and idade < 20:
+        mume20 += 1
+    if sexo == 'M':
+        homens += 1
+    if idade > 18:
+        mais18 += 1
+    if perg == 'N':
+        break
+print("Segundo os dados, ao todo existem:")
+print(f"{mais18} pessoas com idade superior a 18\n{mume20} mulheres com menos de 20 anos\n{homens} homens")"""
