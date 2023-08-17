@@ -492,9 +492,10 @@ print(f"Foram digitados {cont} números e a soma entre eles deu {soma}")"""
 
 #Treino de WHILE: Ex067 - Tabuada V3.0
 
-"""perg = int(input("Digite o número da tabuada que você quer ver: "))
+"""void = ''
+print(void)
+perg = int(input("Digite o número da tabuada que você quer ver: "))
 cont = 0
-void = ''
 
 print(void)
 
@@ -510,48 +511,74 @@ print("=" * 13)"""
 
 #Treino de WHILE: Ex068 - Jogo par ou ímpar
 
-from random import randint
+"""from random import randint
+from time import sleep
 
-"""pc = randint(1, 10)
+print("=" * 30)
+print("{:^30}".format("O Famoso Par ou Ímpar"))
+print("=" * 30)
+
+void = ''
+pc = randint(1, 10)
 cont = 0
+print(void)
 while True:
     esc = str(input("Par ou ímpar? ")).upper()[0]
+    sleep(0.5)
     num = int(input("Escolha um número: "))
     soma = num + pc
 
     cont += 1
     if esc == "P" and soma % 2 == 0:
-        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
-        print("Parabéns... de novo!")
+        print(f"O pc jogou o número {pc} e você o número {num}, a soma entre ambos deu {soma}")
+        sleep(1)
+        print("Parabéns... você venceu!")
+        sleep(1.5)
+        print("E eu quero tentar de novo!")
+        print(void)
     if esc == "P" and soma % 2 == 1:
-        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
-        print("Perdeu!")
-        print(f"Ganhou {cont - 1} vez(es)")
+        print(f"O pc jogou o número {pc} e você o número {num}, a soma entre ambos deu {soma}")
+        sleep(1)
+        print("Você peeeeerdeeeu!")
+        print(void)
+        sleep(1.5)
+        print(f"\033[1m[total de vitórias {cont - 1}]\033[m")
         break
     if esc == "I" and soma % 2 == 0:
-        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
-        print("Perdeu!")
-        print(f"Ganhou {cont - 1} vez(es)")
+        print(f"O pc jogou o número {pc} e você o número {num}, a soma entre ambos deu {soma}")
+        sleep(1)
+        print("Você peeeeerdeeeu!")
+        print(void)
+        sleep(1.5)
+        print(f"\033[1m[total de vitórias {cont - 1}]\033[m")
         break
     if esc == "I" and soma % 2 == 1:
-        print(f"pc jogou {pc} e você {num}, a soma deu {soma}")
-        print("Parabéns... de novo!")"""
+        print(f"O pc jogou o número {pc} e você o número {num}, a soma entre ambos deu {soma}")
+        sleep(1)
+        print("Parabéns... você venceu!")
+        sleep(1.5)
+        print("E eu quero tentar de novo!")
+        print(void)"""
 
 
 
 
 #Treino de WHILE: Ex069 - Analise de Dados do Grupo
 
-from time import sleep
-
-"""mais18 = 0
+"""from time import sleep
+mais18 = 0
 mume20 = 0
 homens = 0
+void = ''
 
 while True:
-    sexo = str(input("Digite o sexo da pessoa: ")).upper()
+    print("=" * 30)
+    sexo = str(input("Digite o sexo da pessoa: ")).upper()[0]
     idade = int(input("Digite a idade da pessoa: "))
+    print("=" * 30)
+    print(void)
     perg = input("Quer continuar? [S/N] ").upper()
+    print(void)
     if sexo == 'F' and idade < 20:
         mume20 += 1
     if sexo == 'M':
@@ -560,5 +587,108 @@ while True:
         mais18 += 1
     if perg == 'N':
         break
-print("Segundo os dados, ao todo existem:")
-print(f"{mais18} pessoas com idade superior a 18\n{mume20} mulheres com menos de 20 anos\n{homens} homens")"""
+print("=" * 35)
+print("\033[1mSegundo os dados, ao todo existem:\033[m")
+print(void)
+print(f"[{mais18}] Pessoa(s) com idade superior a 18 anos.\n[{mume20}] Mulher(es) com menos de 20 anos"
+      f"\n[{homens}] Homem(ns)")"""
+
+
+
+
+#Treino de WHILE: Ex070 - Estatística em Produtos
+
+"""from time import sleep
+
+void = proba = ''
+mais1000 = soma = 0
+produtos1000 = []
+n = []
+produtos = []
+
+print("~" * 33)
+print("{:^30}".format("LOJAS MAGAIESKI"))
+print("~" * 33)
+
+while True:
+    print(void)
+    print("=" * 32)
+    pro = str(input("Digite o nome do produto: "))
+    valor = int(input("Digite o valor do produto: "))
+    print("=" * 32)
+    print(void)
+    perg = str(input("Deseja continuar? ")).upper()[0]
+
+    soma += valor
+    n.append(valor)
+    if valor > 1000:
+        produtos.append(pro)
+
+    if valor > 1000:
+        mais1000 += 1
+        produtos1000.append(pro)
+    if valor == min(n):
+        proba = pro
+
+    if perg == 'N':
+        break
+
+print(void)
+print(void)
+print("=" * 30)
+print(f"O gasto total na compra foi de R${soma}")
+print(f"O produto mais barato foi {proba} que custa R${min(n)}")
+print(f"{mais1000} Produtos custam mais de R$1000:")
+print(f"{produtos}")
+print("=" * 30)
+sleep(3)
+print("Volte Sempre!")"""
+
+
+
+
+#Treino de WHILE: Ex071 - Simulador de Caixa Eletrônico
+
+"""from time import sleep
+
+void = ''
+
+print("=" * 30 )
+print("{:^30}".format("MAGAIESKI'S BANK"))
+print("=" * 30)
+
+print(void)
+
+
+saque = int(input('Digite o valor que você deseja sacar: '))
+
+n50 = n20 = n10 = n1 = 0
+
+while True:
+    if saque >= 50:
+        saque -= 50
+        n50 += 1
+    elif saque >= 20:
+        saque -= 20
+        n20 += 1
+    elif saque >= 10:
+        saque -= 10
+        n10 += 1
+    elif saque >= 1:
+        saque -= 1
+        n1 += 1
+    if saque == 0:
+        break
+print(void)
+print("-" * 35)
+print("Foi Sacado:")
+print(void)
+print(f"{n50} nota(s) de R$50\n{n20} nota(s) de R$20\n{n10} nota(s) de R$10\n{n1} nota(s) de R$1")
+print("-" * 35)"""
+
+
+
+
+
+
+
