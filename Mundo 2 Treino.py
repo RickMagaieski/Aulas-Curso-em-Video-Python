@@ -209,17 +209,26 @@ else:
 """from time import sleep
 from random import randint
 
+void = ''
+
 print("=" * 30)
 print("Seja Bem Vindo ao Esfinge V2.0")
 print("=" * 30)
+
+print(void)
+
 sleep(0.5)
 print("Olá, antes de inciarmos nos forneca algumas informações!")
 sleep(2)
+
+print(void)
+
 nome = ''
 esc = 0
 while True:
     sexo = input('Por favor, nos informe o seu sexo\nDigite [M] para masculino e [F] para feminino: ').upper()
     esc = 0
+    print(void)
     while True:
         if sexo == "F":
             nome = input("Qual é o seu nome minha querida? ")
@@ -230,7 +239,7 @@ while True:
             break
         sleep(0.5)
         if sexo == "M":
-            print(f"Seja bem vindo(a) a Esfinge {nome}!")
+            print(f"Seja bem vindo a Esfinge {nome}!")
         elif sexo == "F":
             print(f"Seja bem vinda a Esfinge {nome}!")
 
@@ -263,6 +272,7 @@ while True:
                     cont = 0
 
                     while True:
+                        print(void)
                         cont += 1
                         perg = int(input('Sua resposta: '))
 
@@ -316,8 +326,13 @@ while True:
                 break
 
             if esc == 3:
-                print("Olá! Meu nome é Henrique e eu estou tentando fazer essa bagaça funcionar"
+                print("Olá! Meu nome é Henrique e eu estou tentando fazer essa bagaça funcionar "
                       "a dois dias (contando hoje), então eu sinceramente espero terminar hoje!")
+                sleep(1.3)
+                print(void)
+                print("Obs: Terminei esta bagaçeira deliciosa!")
+                print(void)
+                sleep(1)
                 menu = input("Digite [M] para retornar ao menu: ").upper()
 
             if esc == 4:
@@ -659,12 +674,15 @@ print("=" * 30)
 
 print(void)
 
-
 saque = int(input('Digite o valor que você deseja sacar: '))
 
-n50 = n20 = n10 = n1 = 0
+n100 = n50 = n20 = n10 = n5 = n2 = n1 = 0
+print("-" * 30)
 
 while True:
+    if saque >= 100:
+        saque -= 100
+        n100 += 1
     if saque >= 50:
         saque -= 50
         n50 += 1
@@ -674,21 +692,29 @@ while True:
     elif saque >= 10:
         saque -= 10
         n10 += 1
+    elif saque >= 5:
+        saque -= 5
+        n5 += 1
+    elif saque >= 2:
+        saque -= 2
+        n2 += 1
     elif saque >= 1:
         saque -= 1
         n1 += 1
     if saque == 0:
         break
-print(void)
-print("-" * 35)
-print("Foi Sacado:")
-print(void)
-print(f"{n50} nota(s) de R$50\n{n20} nota(s) de R$20\n{n10} nota(s) de R$10\n{n1} nota(s) de R$1")
-print("-" * 35)"""
-
-
-
-
-
-
-
+if n100:
+    print(f"{n100} nota(s) de R$100")
+if n50:
+    print(f"{n50} nota(s) de R$50")
+if n20:
+    print(f"{n20} nota(s) de R$20")
+if n10:
+    print(f"{n10} nota(s) de R$10")
+if n5:
+    print(f"{n5} nota(s) de R$5")
+if n2:
+    print(f"{n2} nota(s) de R$2")
+if n1:
+    print(f"{n1} nota(s) de R$1")
+print("-" * 30)"""
