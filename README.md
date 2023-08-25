@@ -7,7 +7,7 @@
 
 ![Python](https://github.com/RickMagaieski/Aulos-Curso-em-Video-Python/assets/136091273/d72e58d2-f189-467b-a8d7-7802b92255c3)
  
- **My [GitHub](https://github.com/RickMagaieski)** repository!
+ **My [GitHub](https://github.com/RickMagaieski) repository!**
  ***
  **"Hello World!"** 
 
