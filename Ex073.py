@@ -1,23 +1,29 @@
-tabela = ('Botafogo', 'Palmeiras', 'Grêmio', 'Flamengo', 'Fluminense', 'Bragantino', 'Athletico-PR', 'Fortaleza',
-          'Atlético-MG', 'Cuibá', 'São Paulo', 'Cruzeiro', 'Corinthias', 'Internacional', 'Goias', 'Bahia', 'Santos',
-          'Vasco', 'Coritiba', 'América-MG')
+position = ('MIT', 'Stanford', 'Harvard', 'Caltech', 'University of Chicago', 'University of Pennsylvania',
+            'Princeton University', 'Yale University', 'Cornell University', 'Columbia Unversity',
+            'Johns Hopkins University', 'University of Michigan', 'UCB', 'NYU', 'UCLA', 'Duke University',
+            'Carnegie Mellon University', 'UCSD', 'Brown University', 'University of Texas at Austin')
 
 void = ''
 
-tabelaordenada = sorted(tabela)
-
 print(void)
-print(f'Os primeiros 5 colocados são: {tabela[0:5]}')
-print(f"Os ultimos 4 colocados são: {tabela[-4:]}")
+print(f'\033[1mThe first 5 universities are:\033[m {position[0:5]}')
+print(f"\033[1mThe last 4 universities are:\033[m {position[-4:]}")
 print(void)
-print("Time em ordem alfabética:")
-for times in tabelaordenada:
-    print(times)
+print("\033[1m\033[4mIn alphabetical order:\033[m\033[m")
+for uni in sorted(position):
+    print(uni)
 print(void)
-for loc, time in enumerate(tabela):
-    if 'Chapecoense' in time:
-        print(f"A chapecoense está na {loc}ª posição.")
+for loc, uni in enumerate(position):
+    if 'Harvard' in uni:
+        if loc == 0:
+            print(f'Harvard is in 1st position')
+        elif loc == 1:
+            print(f'Harvard is in 2nd position')
+        elif loc == 2:
+            print(f'Harvard is in 3rd position')
+        else:
+            print(f'Harvard is in {loc + 1}th position')
         break
 else:
-    print('O time não foi encontrado.')
+    print('University not found.')
 
