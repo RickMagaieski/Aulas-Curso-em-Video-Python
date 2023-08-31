@@ -1,18 +1,18 @@
-propri = ("Pencil.............................R$", 1.75,
-          "Rubber.............................R$", 2.00,
-          "Notebook...........................R$", 15.90,
-          "Case...............................R$", 25.00,
-          "Protractor.........................R$", 4.20,
-          "Compass............................R$", 9.99,
-          "Backpack...........................R$", 120.32,
-          "Pens...............................R$", 22.30,
-          "Book...............................R$", 34.90)
+propri = ("Lápis", 1.75,
+          "Apagador", 2.00,
+          "Caderno", 15.90,
+          "Estojo", 25.00,
+          "Transferidor", 4.20,
+          "Compasso", 9.99,
+          "Mochila", 120.32,
+          "Canetas", 22.30,
+          "Livro", 34.90)
 print("=" * 45)
-print("{:^45}".format("Products"))
+print(f"{'Produtos':^40}")
 print("=" * 45)
 for pos in range(0, len(propri)):
     if pos % 2 == 0:
-        print(f"{propri[pos]:}", end=' ')
+        print(f"{propri[pos]:.<30}", end=' ')
     else:
-        print(f"{propri[pos]:}")
+        print(f"R${propri[pos]:>7.2f}")
 print("=" * 45)

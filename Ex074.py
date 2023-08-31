@@ -7,6 +7,6 @@ for sort in range(1, 6):
     numsort.append(sr)
 tupla = tuple(numsort)
 
-print(f"The sorted number was: {tupla}")
-print(f"The lowest number was: {min(tupla)}")
-print(f"The highest number was: {max(tupla)}")
+print(f"Os números sorteados foram: {tupla}")
+print(f"O menor número foi: {min(tupla)}")
+print(f"O maior número foi: {max(tupla)}")
