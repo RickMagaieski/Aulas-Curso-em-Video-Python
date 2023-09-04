@@ -113,19 +113,48 @@ print(f"Foram digitados {cont2} numeros pares")"""
 
 #Treino de TUPLAS: Ex076 - Lista de Preços com Tuplas
 
+"""contprice = 0
 void = ''
-propre = ('Cabo de força', 25.00,
-         'Mouse', 30.00 ,
-         'Teclado', 35.00,
-         'Monitor', 520.50)
+propre = ('Filtro de Linha', 45.12,
+         'Mouse', 35.65 ,
+         'Teclado', 35.54,
+         'Monitor', 480.22,
+         'Gabinete', 200.12,
+         'Placa de Video', 2250.32,
+         'Ssd', 92.30,
+         'Placa Mãe', 102.21,
+         'Fonte', 305.12,
+         'Fone', 82.32,
+         'Memórias RAM', 32.14,
+         'Processador', 63.70)
+
 
 print(void)
+print("=" * 40)
+print(f"{'My Computer Price':>25}")
 print("=" * 40)
 
 for c in range(0, len(propre)):
     if c % 2 == 0:
         print(f"{propre[c]:.<30}R$", end=' ')
     else:
-        print(f"{propre[c]:>6.2f}")
+        print(f"{propre[c]:>7.2f}")
+        contprice += propre[c]
 
 print("=" * 40)
+print(void)
+print(f"Total: {contprice:.2f}")"""
+
+
+
+
+#Treino de Tuplas: Ex077 - Contando Vogais em Tupla
+
+propre = 'Filtro de Linha', 'Mouse', 'Teclado', 'Monitor', 'Gabinete', 'Placa de Video', 'Ssd', 'Placa Mãe'\
+    , 'Fonte', 'Fone', 'Memórias RAM', 'Processador'
+
+for s in propre:
+    print(f"\nEm \033[1m{s}\033[m temos: ", end='')
+    for letra in s:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
