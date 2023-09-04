@@ -76,3 +76,56 @@ print(f"\033[1mValores sorteados:\033[m {tuple(ale)}")
 print(void)
 print(f"\033[1mO maior valor dentro da tupla é:\033[m {max(tuple(ale))}")
 print(f"\033[1mO menor valor dentro da tupla é:\033[m {min(tuple(ale))}")"""
+
+
+
+
+#Treino de TUPLAS: Ex075 - Análise de Dados em Tuplas
+
+"""lista = []
+cont = 0
+void = ''
+cont2 = 0
+
+
+for v in range(1, 5):
+    perg = int(input("Digite um número: "))
+    lista.append(perg)
+    if perg == 9:
+        cont += 1
+    if perg % 2 == 0:
+        cont2 += 1
+
+
+tupla = tuple(lista)
+
+print(f"Você digitou os seguintes valores: {tupla}")
+print(void)
+print(f"O número 9 apareceu {cont} vezes")
+if 3 in tupla:
+    print(f"O primeiro numero três aparece na {tupla.index(3) + 1}ª posição")
+else:
+    print("Não foi digitado nenhum numero 3")
+print(f"Foram digitados {cont2} numeros pares")"""
+
+
+
+
+#Treino de TUPLAS: Ex076 - Lista de Preços com Tuplas
+
+void = ''
+propre = ('Cabo de força', 25.00,
+         'Mouse', 30.00 ,
+         'Teclado', 35.00,
+         'Monitor', 520.50)
+
+print(void)
+print("=" * 40)
+
+for c in range(0, len(propre)):
+    if c % 2 == 0:
+        print(f"{propre[c]:.<30}R$", end=' ')
+    else:
+        print(f"{propre[c]:>6.2f}")
+
+print("=" * 40)
