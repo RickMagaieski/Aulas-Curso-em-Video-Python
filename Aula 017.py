@@ -56,7 +56,7 @@ for v in range(0, 5):
 
 for c, v in enumerate(valores):
     print(f"Na posição {c} encontrei o valor {v}!")
-print("Cheguei ao final da lista")"""
+print("Cheguei ao final da lista")
 
 
 
@@ -68,3 +68,4 @@ print(f"Essa é a lista B: {b}")
 
 # Quando você faz isso, você não está criando uma cópia, você está interligando ambas as listas!
 # Já para criar uma cópia você precisa fazer isso: b = a[:]. Assim, todos os números de A estarão em B, ou uma cópia :)
+"""
