@@ -150,11 +150,11 @@ print(f"Total: {contprice:.2f}")"""
 
 #Treino de Tuplas: Ex077 - Contando Vogais em Tupla
 
-propre = 'Filtro de Linha', 'Mouse', 'Teclado', 'Monitor', 'Gabinete', 'Placa de Video', 'Ssd', 'Placa Mãe'\
+"""propre = 'Filtro de Linha', 'Mouse', 'Teclado', 'Monitor', 'Gabinete', 'Placa de Video', 'Ssd', 'Placa Mãe'\
     , 'Fonte', 'Fone', 'Memórias RAM', 'Processador'
 
 for s in propre:
     print(f"\nEm \033[1m{s}\033[m temos: ", end='')
     for letra in s:
         if letra.lower() in 'aeiou':
-            print(letra, end=' ')
+            print(letra, end=' ')"""
