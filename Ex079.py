@@ -16,6 +16,6 @@ while True:
         break
 print(void)
 if ques2 == 'N':
-    print(f"You've added these values: {listy}")
+    print(f"You've added these values: {sorted(listy)}")
 if ques2 != 'N' or 'Y':
     print("Program Finished")
