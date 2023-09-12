@@ -1,7 +1,7 @@
 listy = []
 
 for values in range(0, 5):
-    num = int(input("Type an value: "))
+    num = int(input("Type a value: "))
     if values == 0 or num > listy[-1]:
         listy.append(num)
     else:

@@ -3,7 +3,7 @@ listy = []
 void = ''
 
 while True:
-    listy.append(int(input("Type an value: ")))
+    listy.append(int(input("Type a value: ")))
     count += 1
     ques2 = str(input("Do you want to continue? [Y/N] ")).upper()
     if ques2 == 'N':
