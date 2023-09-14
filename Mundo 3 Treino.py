@@ -148,7 +148,7 @@ print(f"Total: {contprice:.2f}")"""
 
 
 
-#Treino de Tuplas: Ex077 - Contando Vogais em Tupla
+#Treino de TUPLAS: Ex077 - Contando Vogais em Tupla
 
 """propre = 'Filtro de Linha', 'Mouse', 'Teclado', 'Monitor', 'Gabinete', 'Placa de Video', 'Ssd', 'Placa Mãe'\
     , 'Fonte', 'Fone', 'Memórias RAM', 'Processador'
@@ -158,3 +158,127 @@ for s in propre:
     for letra in s:
         if letra.lower() in 'aeiou':
             print(letra, end=' ')"""
+
+
+
+
+
+#Treino de LISTAS: Ex078 - Maior e Menor valores na Lista
+
+"""lista = []
+lista2 = []
+lista3 = []
+void = ''
+
+for cont in range(0, 5):
+    perg = int(input(f"Digite um número para posição {cont}: "))
+    lista.append(perg)
+
+for i, c in enumerate(lista):
+    if c == max(lista):
+        lista2.append(i)
+    if c == min(lista):
+        lista3.append(i)
+
+print(void)
+print(f"Esses são os valores que você digitou: {lista}")
+print(void)
+print(f"O maior valor digitado foi o número {max(lista)} que está na(s) posição(ções): {lista2}")
+print(f"O menor valor digitado foi o número {min(lista)} que está na(s) posição(ções): {lista3}")"""
+
+
+
+
+#Treino de LISTAS: Ex079 - Valores únicos em uma lista
+
+"""lista = []
+
+while True:
+    perg = int(input("Digite um número: "))
+    if perg not in lista:
+        lista.append(perg)
+    else:
+        print("O valor não foi adicionado pois ele já está na lista!")
+    perg2 = str(input("Você quer continuar? [S/N] ")).upper()
+    if perg2 == 'N':
+        break
+    if perg2 != 'S' and 'N':
+        print("Comando Desconhecido! Tente novamente.")
+print(f"Esses foram os números digitados:\n{sorted(lista)}")"""
+
+
+
+
+#Treino de LISTAS: Ex080 - Lista ordenada sem repetições
+
+"""lista = []
+
+for no in range(0, 5):
+    dig = int(input("Digite um valor: "))
+    if no == 0 or dig > lista[-1]:
+        lista.append(dig)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if dig <= lista[pos]:
+                lista.insert(pos, dig)
+                break
+            pos += 1
+print(f"Os valores digitados em ordem foram: {lista}")"""
+
+
+
+
+#Treino de LISTAS: Ex081 - Extraindo dados de uma lista
+
+"""lista = []
+cont = 0
+void = ''
+
+while True:
+    perg = int(input("Digite um número: "))
+    lista.append(perg)
+    cont += 1
+    perg2 = str(input("Deseja continuar? [S/N] ")).upper()
+    if perg2 == 'N':
+        break
+    if perg2 != 'S' and 'N':
+        print("Comando Desconhecido! Tente novamente.")
+        
+lista.sort(reverse=True)
+print(void)
+print(f"Você digitou {cont} números.")
+print(f"Os valores em ordem decrescente são: {lista}")
+if 5 in lista:
+    print("O número 5 faz parte dessa lista!")
+else:
+    print("O número 5 não faz parte dessa lista...")"""
+
+
+
+
+#Treino de LISTAS: Ex082 - Dividindo valores em várias listas
+
+"""lista = []
+lista2 = []
+lista3 = []
+void = ''
+
+while True:
+    perg = int(input("Digite um número: "))
+    lista.append(perg)
+    perg2 = str(input("Deseja continuar? [S/N] ")).upper()
+    if perg2 == 'N':
+        break
+    if perg2 != 'S':
+        print("Comando Desconhecido! Tente novamente.")
+    if perg % 2 == 0:
+        lista2.append(perg)
+    if perg % 2 != 0:
+        lista3.append(perg)
+
+print(void)
+print(f"A lista original é esta: {lista}")
+print(void)
+print(f"A lista com números pares é esta: {lista2}")
+print(f"E a lista com números ímpares é esta: {lista3}")"""
