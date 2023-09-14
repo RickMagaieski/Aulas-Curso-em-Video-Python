@@ -3,21 +3,21 @@ listy = []
 void = ''
 
 while True:
-    listy.append(int(input("Type a value: ")))
+    listy.append(int(input("Digite um valor: ")))
     count += 1
-    ques2 = str(input("Do you want to continue? [Y/N] ")).upper()
+    ques2 = str(input("Você quer continuar? [S/N] ")).upper()
     if ques2 == 'N':
         break
-    if ques2 != 'Y' and 'N':
-        print("Invalid Command!")
+    if ques2 != 'S' and 'N':
+        print("Comando Inválido!")
         break
 
 listy.sort(reverse=True)
 
 print(void)
-print(f"You've typed {count} values.")
-print(f"The values in descending order are: {listy}")
+print(f"Você digitou {count} valores.")
+print(f"A lista dos valores em ordem crescente é esta: {listy}")
 if 5 in listy:
-    print("The value 5 is part of the list!")
+    print("O valor 5 faz parte desta lista!")
 else:
-    print("The value 5 isn't part of this list...")
+    print("O valor 5 não faz parte desta lista...")

@@ -3,19 +3,19 @@ ques2 = ''
 void = ''
 
 while True:
-    ques = int(input("Type a number: "))
+    ques = int(input("Digite um número: "))
     if ques not in listy:
         listy.append(ques)
     else:
-        print("Value already typed! Type another one.")
-    ques2 = str(input("You want continue? [Y/N] ")).upper()
+        print("Valor já digitado anteriormente.")
+    ques2 = str(input("Você quer continuar? [S/N] ")).upper()
     if ques2 == 'N':
         break
-    if ques2 != 'Y':
-        print("Invalid Command")
+    if ques2 != 'S':
+        print("Comando Inválido")
         break
 print(void)
 if ques2 == 'N':
-    print(f"You've added these values: {sorted(listy)}")
+    print(f"Você adicionou esses valores: {sorted(listy)}")
 if ques2 != 'N' or 'Y':
-    print("Program Finished")
+    print("Programa Finalizado")
