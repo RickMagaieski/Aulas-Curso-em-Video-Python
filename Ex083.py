@@ -1,15 +1,18 @@
-conto = 0
-contc = 0
+ex = str(input('Digite uma expressão: '))
 
-quest = str(input("Digite uma expressão: "))
+lista = []
 
-for run in quest:
-    if run == '(':
-        conto += 1
-    elif run == ')':
-        contc += 1
+for simbolo in ex:
+    if simbolo == '(':
+        lista.append('(')
+    elif simbolo == ')':
+        if len(lista) > 0:
+            lista.pop()
+        else:
+            lista.append(')')
+            break
 
-if conto == contc:
-    print("Parabéns! Sua expressão é válida :)")
+if len(lista) == 0:
+    print("Sua expressão é válida!")
 else:
-    print("Sinto muito... Sua expressão não é válida :(")
+    print("Sua expressão é inválida!")
