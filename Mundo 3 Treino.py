@@ -288,7 +288,7 @@ print(f"E a lista com números ímpares é esta: {lista3}")"""
 
 #Treino de LISTAS: Ex083 - Validando expressões matemáticas
 
-perg = str(input("Digite uma expressão: "))
+"""perg = str(input("Digite uma expressão: "))
 
 lista = []
 
@@ -305,4 +305,4 @@ for pare in perg:
 if len(lista) == 0:
     print("Sua expressão é válida!")
 else:
-    print("Sua expressão é inválida!")
+    print("Sua expressão é inválida!")"""
