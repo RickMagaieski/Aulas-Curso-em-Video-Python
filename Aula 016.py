@@ -31,4 +31,4 @@ print(c.index(5, 1)) #Para você ver se existe mais algum numero igual em uma po
 
 print(c.count(5))  #Ver quantas vezes aparece o 5
 
-del(b)  # apaga o bn
+del(b)  # apaga o b
