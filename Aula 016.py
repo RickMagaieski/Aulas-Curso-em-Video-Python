@@ -1,5 +1,3 @@
-from time import sleep
-
 #Tuplas são imutáveis
 
 lanche = ("Hamburger", "Suco", "Pizza", "Pudim")
@@ -21,13 +19,16 @@ for cont in range(0, len(lanche)):
 print(sorted(lanche))
 
 
-a = (2, 3, 5)
-b = (9, 12, 4, 5)
-c = a + b
+a = (2, 5, 4)
+b = (5, 8, 1, 2)
+c = b + a
 
-print(c)  #Ele concatena
-print(c.index(5))  #Ver a posição
-print(c.count(21))  #Ver se tem o 21, no caso
+print(c)  #Ele concatena(junta)
+print(c.index(8))  #Ver a posição em que o número em questão está (primeira ocorrência)
+
+print(c.index(5, 1)) #Para você ver se existe mais algum numero igual em uma posição diferente,
+# você precisa colocar do lado uma posição a frente do que a primeira ocorrência está
+
+print(c.count(5))  #Ver quantas vezes aparece o 5
 
 del(b)  # apaga o b
-
