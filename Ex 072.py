@@ -11,5 +11,5 @@ while True:
         elif num >= len(numeros) or num < 0:
             print("Tente novamente!")
             break
-    if n > 0:
+    if n > 1:
         break
