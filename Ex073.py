@@ -30,3 +30,6 @@ print(void)
 
 for univ in sorted(uni):
     print('\033[1m*\033[m', univ)
+
+print(void)
+print(f"\033[1m* A universidade de Oxford está na {uni.index('Oxford') + 1}ª posição.\033[m")
