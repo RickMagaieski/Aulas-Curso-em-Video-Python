@@ -59,7 +59,7 @@ for local, univer in enumerate(uni):
 
 
 #Treino de TUPLAS: Ex074 - Maior e menor valores em Tupla
-
+"""
 from random import randint
 
 void = ''
@@ -75,4 +75,55 @@ for tup in tupla:
     print(tup, end=' ')
 
 print(f"\nO maior valor gerado foi o valor {max(tupla)}")
-print(f"O menor valor gerado foi o valor {min(tupla)}")
+print(f"O menor valor gerado foi o valor {min(tupla)}")"""
+
+
+
+
+#Treino de TUPLAS: Ex075 - Análise de dados em uma Tupla
+
+"""void = ''
+lista = []
+lista2 = []
+cont = 0
+cont3 = 0
+
+for num in range(0, 4):
+    digi = (int(input("Digite um número: ")))
+    lista.append(digi)
+    if digi == 9:
+        cont += 1
+    if digi % 2 == 0:
+        lista2.append(digi)
+    if digi == 3:
+        cont3 += 1
+
+numeros = tuple(lista)
+par = tuple(lista2)
+
+print(void)
+
+print(f"Você digitou os seguintes valores: {numeros}")
+
+print(void)
+
+if cont3 == 1:
+    print(f"O número 3 apareceu na posição {numeros.index(3)}.")
+elif 3 not in numeros:
+    print("O número 3 não foi encontrado.")
+if cont3 > 1 and 3 in numeros[0:2]:
+    print(f"O número 3 apareceu nas seguintes posições: {numeros.index(3)}, {numeros.index(3, 2)}")
+elif cont3 > 1 and 3 in numeros[0:3]:
+    print(f"O número 3 apareceu nas seguintes posições: {numeros.index(3)}, {numeros.index(3, 2) + 1}")
+
+print(f"O valor 9 apareceu {cont} vez(es).")
+
+print("Esses são os números pares digitados:", end=' ')
+for pares in par:
+    print(pares, end=' ')"""
+
+
+
+
+#Treino de TUPLAS: Ex076 - Lista de Preços com Tupla
+
