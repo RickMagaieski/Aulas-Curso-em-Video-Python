@@ -126,4 +126,24 @@ for pares in par:
 
 
 #Treino de TUPLAS: Ex076 - Lista de Preços com Tupla
+"""
+void = ''
+produtos = ('Lápis', 1.75,
+            'Borracha', 2.00,
+            'Caderno', 15.90,
+            'Estojo', 25.00,
+            'Transferidor', 4.20,
+            'Compasso', 9.99,
+            'Mochila', 120.32,
+            'Canetas', 22.30,
+            'Livro', 33.90)
 
+print("\033[1m=" * 51)
+print(f"{'MAGAIESKIS SHOP':>32}\033[m")
+print("\033[1m=\033[m" * 51)
+
+for pro in range(0, len(produtos)):
+    if pro % 2 == 0:
+        print(f"\033[1m*\033[m {produtos[pro]:.<40}R$", end=' ')
+    else:
+        print(f"{produtos[pro]:>6.2f}")"""
