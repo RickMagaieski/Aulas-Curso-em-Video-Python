@@ -147,3 +147,16 @@ for pro in range(0, len(produtos)):
         print(f"\033[1m*\033[m {produtos[pro]:.<40}R$", end=' ')
     else:
         print(f"{produtos[pro]:>6.2f}")"""
+
+
+
+
+#Treino TUPLA: Ex077 - Contando vogais em Tupla
+"""
+palavras = ('MESA', 'CADEIRA', 'JANELA', 'CELULAR', 'COMPUTADOR', 'GELADEIRA', 'CAMA', 'ESCRIVANINHA', 'TAPETE')
+
+for c in palavras:
+    print(f"\nPara a palavra {c} nos temos:", end=' ')
+    for vogais in c:
+        if vogais in 'AEIOU':
+            print(vogais, end=' ')"""
