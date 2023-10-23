@@ -19,7 +19,7 @@ numeros[3] = 4 # Vai adicionar um 4 na posição 3
 numeros.append(21)
 numeros.sort(reverse=True) #Vai girar a orientação ao contrário
 numeros.insert(2, 0) #Vai inserir um 0 na posição 2
-numeros.pop() #Elimina o ultima elemento. Ele vai eliminar algo especifico se você especificar a posição
+numeros.pop() #Elimina o ultimo elemento. Ele vai eliminar algo especifico se você especificar a posição
 numeros.remove(3) #Eliminará o numero em questão (não a posição, o numero ou palavra). Caso existam dois números iguais,
 #ele irá remover o primeiro elemento que ele encontrar
 print(numeros)
