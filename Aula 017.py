@@ -1,4 +1,4 @@
-lista = [10, 12, 13, 43, 50, 21, 453, 102, 3]
+"""lista = [10, 12, 13, 43, 50, 21, 453, 102, 3]
 print(f"O maior número da lista é o número {max(listan)}")
 print(f"O menor número da lista é o número {min(listan)}")
 listan.pop(3)
