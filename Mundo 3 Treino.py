@@ -151,7 +151,7 @@ for pro in range(0, len(produtos)):
 
 
 
-#Treino TUPLA: Ex077 - Contando vogais em Tupla
+#Treino de TUPLAS: Ex077 - Contando vogais em Tupla
 """
 palavras = ('MESA', 'CADEIRA', 'JANELA', 'CELULAR', 'COMPUTADOR', 'GELADEIRA', 'CAMA', 'ESCRIVANINHA', 'TAPETE')
 
@@ -160,3 +160,90 @@ for c in palavras:
     for vogais in c:
         if vogais in 'AEIOU':
             print(vogais, end=' ')"""
+
+
+
+
+#Treino de LISTAS: Ex078 - Maior e Menor Valores na Lista
+"""
+void = ''
+lista = []
+posma = []
+posme = []
+
+for n in range(0, 5):
+    lista.append(int(input(f"Digite um número para a posição {n}: ")))
+
+for n, p in enumerate(lista):
+    if max(lista) == p:
+        posma.append(n)
+    if min(lista) == p:
+        posme.append(n)
+
+print(void)
+print(f"Sua lista: {lista}")
+print(void)
+
+if len(posma) == 1:
+    print(f"\nO maior número da sua lista foi o número {max(lista)} que está na posição:", end=' ') #Maior no singular
+    for c in posma:
+        print(f"{c}...")
+else:
+    print(f"\nO maior número da sua lista foi o número {max(lista)} que está nas posições:", end=' ') #Maior no plural
+    for con in posma:
+        print(f"{con}...", end=' ')
+
+
+if len(posme) == 1:
+    print(f"\nO menor número da sua lista foi o número {min(lista)} que está na posição:", end=' ') #Menor no singular
+    for co in posme:
+        print(f"{co}...", end=' ')
+else:
+    print(f"\nO menor número da sua lista foi o número {min(lista)} que está nas posições:", end=' ') #Maior no plural
+    for cont in posme:
+        print(f"{cont}...", end=' ')
+
+print(void)"""
+
+
+
+
+#Treino de LISTAS : Ex079 - Valores Únicos em Uma Lista
+"""
+from time import sleep
+lista = []
+cont = 1
+void = ''
+
+print(void)
+print("Números repetidos não serão adicionados!")
+sleep(2)
+print(void)
+
+while True:
+    n = int(input("Digite um número: "))
+
+    if n not in lista:
+        lista.append(n)
+    else:
+        print(void)
+        print("O valor não foi adicionado.")
+        print(void)
+
+    perg = str(input("Deseja continuar? [S/N] ")).upper()
+
+    if perg != 'S' and perg != 'N':
+        print("Comando Inválido, tente novamente!")
+        break
+    elif perg == 'N':
+        break
+
+lista.sort()
+print(void)
+print(f"Sua lista já ordenada: {lista}")"""
+
+
+
+
+#Treino de LISTAS: Ex080 - Lista Ordenada Sem Repetições
+
