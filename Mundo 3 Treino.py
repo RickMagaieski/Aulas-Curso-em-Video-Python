@@ -247,3 +247,25 @@ print(f"Sua lista já ordenada: {lista}")"""
 
 #Treino de LISTAS: Ex080 - Lista Ordenada Sem Repetições
 
+lista = []
+void = ''
+
+print("=" * 36)
+for p in range(0, 5):
+    n = int(input(f"\033[1m\033[89mDigite um número para a posição\033[m\033[m \033[1m\033[34m{p}\033[m\033[1m: "))
+    if len(lista) == 0 or n > lista[-1]:
+        lista.append(n)
+        print("\033[89m\033[1mNúmero adicionado no fim da lista...\033[m\033[m")
+        print(void)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                print(f"\033[89m\033[1mNúmero adicionado na posição\033[m\033[m \033[1m\033[34m{pos}\033[m\033[m")
+                print(void)
+                break
+            pos += 1
+
+print("=" * 38)
+print(f"\033[1m\033[89mSua lista já ordenada:\033[m\033[m \033[1m{lista}\033[m")
