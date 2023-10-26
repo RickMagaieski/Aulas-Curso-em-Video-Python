@@ -246,7 +246,7 @@ print(f"Sua lista já ordenada: {lista}")"""
 
 
 #Treino de LISTAS: Ex080 - Lista Ordenada Sem Repetições
-
+"""
 lista = []
 void = ''
 
@@ -268,4 +268,105 @@ for p in range(0, 5):
             pos += 1
 
 print("=" * 38)
-print(f"\033[1m\033[89mSua lista já ordenada:\033[m\033[m \033[1m{lista}\033[m")
+print(f"\033[1m\033[89mSua lista já ordenada:\033[m\033[m \033[1m{lista}\033[m")"""
+
+
+
+
+#Treino de LISTAS: Ex081 - Extraindo Dados de Uma lista
+"""
+cont = 0
+lista = []
+void = ''
+
+while True:
+    n = int(input("Digite um número: "))
+    lista.append(n)
+    cont += 1
+    perg = str(input("Deseja continuar? ")).upper()[0]
+    print(void)
+
+    if perg != 'S' and perg != 'N':
+        print("Comando Inválido.")
+        break
+    elif perg == 'N':
+        break
+
+print(void)
+lista.sort(reverse=True)
+
+if 5 in lista:
+    print("O número 5 está nesta lista!")
+
+print(f"Aqui está a sua lista ordenada inversamente: {lista}")"""
+
+
+
+
+#Treino de LISTAS: Ex082 - Dividindo Valores em Várias Listas
+"""
+lista = []
+imp = []
+par = []
+void = ''
+
+while True:
+    n = int(input("\033[1mDigite um número:\033[m "))
+    lista.append(n)
+    perg = str(input("\033[1mVocê quer continuar? [S/N]\033[m ")).upper()
+    print(void)
+
+    if perg != 'S' and perg != 'N':
+        print("\033[1m\033[31mComando Inválido!\033[m\033[m")
+    elif perg == 'N':
+        break
+
+    if n % 2 == 0:
+        par.append(n)
+    if n % 2 == 1:
+        imp.append(n)
+
+print(void)
+lista.sort()
+par.sort()
+imp.sort()
+
+print(f"\033[1mSua Lista original é esta:\033[m {lista}")
+print(void)
+
+print(f"\033[1mSua lista apenas com números pares é esta:\033[m ", end='')
+for p in par:
+    if p == par[-1]:
+        print(f"\033[33m{p}\033[m", end='...')
+    else:
+        print(f"\033[33m{p}\033[m", end=', ')
+
+print(f"\033[1m\nSua lista apenas com número ímpares é esta:\033[m ", end='')
+for i in imp:
+    if i == imp[-1]:
+        print(f"\033[34m{i}\033[m", end='...')
+    else:
+        print(f"\033[34m{i}\033[m", end=', ')"""
+
+
+
+
+#Treino de LISTAS: Ex083 - Validando Expressões Matemáticas
+"""
+exp = str(input("Digite sua expressão: "))
+pilha = []
+
+for ana in exp:
+    if ana == '(':
+        pilha.append('(')
+    if ana == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+
+if len(pilha) == 0:
+    print("Sua expressão está correta!")
+else:
+    print("Sua expressão está incorreta...")"""
