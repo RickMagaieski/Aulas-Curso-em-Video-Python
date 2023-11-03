@@ -90,3 +90,29 @@ separado = nome.split()
 
 print(f"Seu primero nome é {separado[0]}\nE seu último nome é {separado[-1]}")"""
 
+
+
+
+#Treino de IF: Ex028 - Jogo da Adivinhação v.1.0
+"""
+from random import randint
+from time import sleep
+
+print("=" * 29)
+print(f"{'JOGO DE ADVINHAÇÃO':>23}")
+print("=" * 29)
+
+print()
+
+print("Tente advinhar o número em que estou pensando...")
+sleep(0.8)
+perg = str(input("Em qual número pensei? "))
+
+print("PROCESSANDO...")
+sleep(1)
+print()
+
+if perg == randint(0, 5):
+    print("Acertou!! Parabéns :)")
+else:
+    print("Errou... tente de novo!")"""
