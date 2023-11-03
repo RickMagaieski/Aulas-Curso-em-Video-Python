@@ -52,3 +52,41 @@ print(cidade[:5] == 'SANTO')"""
 
 
 
+#Treino de STRINGS: Ex025 - Procurando uma string dentro de outra
+"""
+print()
+
+nome = str(input("Digite seu nome completo: ")).upper()
+
+print(f"Seu nome contém Silva? {'SILVA' in nome}")"""
+
+
+
+
+#Treino de STRING: Ex026 - Primeira e última ocorrência de uma string
+"""
+print()
+
+pa = str(input("Digite uma frase: ")).lower().strip()
+
+print()
+
+print(f"A letra A aparece {pa.count('a')} vezes")
+print(f"A primeira letra A aparece na posição {pa.find('a')}")
+print(f"A última letra A aparece na psição {pa.rfind('a')}")"""
+
+
+
+
+#Treino de STRING: Ex027 - Primeiro e último nome de uma pessoa
+"""
+print()
+
+nome = str(input("Digite seu nome completo: "))
+
+print()
+
+separado = nome.split()
+
+print(f"Seu primero nome é {separado[0]}\nE seu último nome é {separado[-1]}")"""
+
