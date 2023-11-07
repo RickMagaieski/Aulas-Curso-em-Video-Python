@@ -189,3 +189,36 @@ if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
     print(f"O ano {ano} é um ano BISSEXTO!")
 else:
     print(f"O ano de {ano} não é um ano BISSEXTO...")"""
+
+
+
+
+#Treino de IF: Ex033 - Maior e Menor Valores
+"""
+print()
+
+p1 = int(input("Primeiro número: "))
+p2 = int(input("Segundo número: "))
+p3 = int(input("Terceiro número: "))
+
+print()
+
+if p1 > p2 and p1 > p3:
+    print(f"O número {p1} é o maior número!")
+if p2 > p1 and p2 > p3:
+    print(f"O número {p2} é o maior número!")
+if p3 > p1 and p3 > p2:
+    print(f"O número {p3} é o maior número!")
+
+if p1 < p2 and p1 < p3:
+    print(f"O número {p1} é o menor número!")
+if p2 < p1 and p2 < p3:
+    print(f"O número {p2} é o menor número!")
+if p3 < p1 and p3 < p2:
+    print(f"O número {p3} é o menor número!")"""
+
+
+
+
+#Treino de IF: Ex034 - Aumentos múltiplos
+
