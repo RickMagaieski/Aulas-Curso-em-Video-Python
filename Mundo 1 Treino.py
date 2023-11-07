@@ -221,4 +221,30 @@ if p3 < p1 and p3 < p2:
 
 
 #Treino de IF: Ex034 - Aumentos múltiplos
+"""
+print()
 
+sal = float(input("Digite o salário do funcionário: "))
+
+if sal > 1250:
+    print(f"O salário do funcionário que antes era de ${sal:.2f} agora será ${sal * 10 / 100 + sal:.2f}")
+else:
+    print(f"O salário do funcionário que antes era de ${sal:.2f} agora será ${sal * 15 / 100 + sal:.2f}")"""
+
+
+
+
+#Treino de IF: Ex035 - Analisando Triângulos v1.0
+"""
+print()
+
+ps1 = float(input("Primeiro Segmento: "))
+ss2 = float(input("Segundo Segmento: "))
+ts3 = float(input("Terceiro Segmento: "))
+
+print()
+
+if ps1 < ss2 + ts3 and ss2 < ps1 + ts3 and ts3 < ss2 + ps1:
+    print("Esses valores podem formar um triângulo!")
+else:
+    print("Esses valores não podem formar um triângulo...")"""
