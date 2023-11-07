@@ -116,3 +116,76 @@ if perg == randint(0, 5):
     print("Acertou!! Parabéns :)")
 else:
     print("Errou... tente de novo!")"""
+
+
+
+
+#Treino de IF: Ex029 - Radar Eletrônico
+"""
+from time import sleep
+
+vel = float(input("Qual foi a velocidade do carro? "))
+
+print()
+
+if vel > 80:
+    print(f"\033[1m\033[31m{vel}Km/h\033[m")
+    sleep(1)
+    print()
+    print(f"\033[1mVocê ultrapassou o limite de velocidade! Você terá que pagar ${(vel - 80) * 7} de multa\033[m")
+else:
+    print(f"\033[1m\033[32m{vel}Km/h\033[m")
+    sleep(1)
+    print()
+    print("\033[1mVocê está dentro do limite de velocidade. Tenha um ótimo dia :)\033[m")"""
+
+
+
+
+#Treino de IF: Ex030 - Par ou Ímpar?
+"""
+print()
+
+num = int(input("Digite um número qualquer: "))
+
+if num % 2 == 0:
+    print(f"\033[1mO número \033[1m\033[32m{num}\033[m\033[1m é um número par!\033[m")
+else:
+    print(f"\033[1mO número \033[1m\033[36m{num}\033[m\033[1m é um número ímpar!\033[m")"""
+
+
+
+
+#Treino de IF: Ex031 - Custo da Viagem
+"""
+pas = float(input("Digite a distância do seu destino: "))
+
+if pas <= 200:
+    print(f"Para uma viagem de {pas}Km, sua passagem custará ${pas * 0.20:.2f}")
+elif pas > 200:
+    print(f"Para uma viagem de {pas}Km, sua passagem custará ${pas * 0.135:.2f}")"""
+
+
+
+
+#Treino de IF: Ex032 - Ano Bissexto
+"""
+from time import sleep
+from datetime import date
+from time import sleep
+
+print()
+
+print("Digite 0 para analisar esse ano!")
+sleep(1)
+
+print()
+
+ano = int(input("Que ano deseja analisar?"))
+
+if ano == 0:
+    ano = date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print(f"O ano {ano} é um ano BISSEXTO!")
+else:
+    print(f"O ano de {ano} não é um ano BISSEXTO...")"""
