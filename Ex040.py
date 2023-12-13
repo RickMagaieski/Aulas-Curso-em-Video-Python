@@ -35,14 +35,14 @@ if media < 5.0:
     while pygame.mixer.music.get_busy():
         pass
 
-elif media > 5.0 < 6.9:
+elif media >= 5.0 <= 6.9:
     print(f"Tirando {n1} e {n2}, a media do aluno e de {media}")
     sleep(1)
     print("Portanto...")
     sleep(1)
     print("Ficou de recuperacao! Estude mais da proxima...")
 
-elif media > 6.9:
+elif media >= 7:
     print(f"Tirando {n1} e {n2}, a media do aluno e de {media}!")
     sleep(0.6)
     print("PARABENS! Voce passou de ano!!")
